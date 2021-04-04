@@ -1,7 +1,8 @@
 function selectoption(classoption) {
-    const selected = document.querySelector("."+ classoption);
-    if (selected !== null) {
-        selected.classList.remove("selected");
+    const optionSelected = document.querySelector(".selected");
+    if (optionSelected !== null) {
+        optionSelected.classList.remove("selected");
     }
-    selected.classList.toggle("selected");
+    const newOptionSelected = document.querySelector("."+ classoption);
+    newOptionSelected.classList.add("selected");
 }
