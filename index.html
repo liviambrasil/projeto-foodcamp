@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,46 +21,76 @@
         <div class="row">
             <h1>Primeiro, seu prato</h1>
             <div class="options">
-                <div onclick="selectfood('dish1')" class="food dish1">
+                <div onclick="selectfood('1')" class="food dish1">
                     <img src="img/frango_yin_yang 1.png">
-                    <h1>Frango yin yang</h1>
+                    <h1 id="foodname1">Frango yin yang</h1>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <h2>R$14,90</h2>
+                    <div class="cost-icon">
+                        <h2>R$<span id = "foodcost1">14.90</span></h2>
+                            <div class="tick icon1">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                    </div>
                 </div>
-                <div onclick="selectfood('dish2')" class="food dish2">
+                <div onclick="selectfood('2')" class="food dish2">
                     <img src="img/frango_yin_yang 1.png">
-                    <h1>Frango yin yang</h1>
+                    <h1 id="foodname2">Frango yin yang</h1>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <h2>R$14,90</h2>
+                    <div class="cost-icon">
+                        <h2>R$<span id = "foodcost2">14.90</span></h2>
+                            <div class="tick icon2">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                    </div>
                 </div>
-                <div onclick="selectfood('dish3')" class="food dish3">
+                <div onclick="selectfood('3')" class="food dish3">
                     <img src="img/frango_yin_yang 1.png">
-                    <h1>Frango yin yang</h1>
+                    <h1 id="foodname3">Frango yin yang</h1>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <h2>R$14,90</h2>
+                    <div class="cost-icon">
+                        <h2>R$<span id = "foodcost3">14.90</span></h2>
+                            <div class="tick icon3">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <h1>Agora, sua bebida</h1>
             <div class="options">
-                <div onclick="selectdrink('drink1')" class="drink drink1">
+                <div onclick="selectdrink('1')" class="drink drink1">
                     <img src="img/coquinha_gelada 1.png">
-                    <h1>Coquinha gelada</h1>
+                    <h1 id="drinkname1">Coquinha gelada</h1>
                     <p>Lata 350ml</p>
-                    <h2>R$ 4,90</h2>
+                    <div class="cost-icon">
+                        <h2>R$<span id = "drinkcost1">4.90</span></h2>
+                        <div class="tick icon1">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
                 </div>
-                <div onclick="selectdrink('drink2')" class="drink drink2">
+                <div onclick="selectdrink('2')" class="drink drink2">
                     <img src="img/coquinha_gelada 1.png">
-                    <h1>Coquinha gelada</h1>
+                    <h1 id="drinkname2">Coquinha gelada</h1>
                     <p>Lata 350ml</p>
-                    <h2>R$ 4,90</h2>
+                    <div class="cost-icon">
+                        <h2>R$<span id = "drinkcost2">4.90</span></h2>
+                        <div class="tick icon2">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
                 </div>
-                <div onclick="selectdrink('drink3')" class="drink drink3">
+                <div onclick="selectdrink('3')" class="drink drink3">
                     <img src="img/coquinha_gelada 1.png">
-                    <h1>Coquinha gelada</h1>
+                    <h1 id="drinkname3">Coquinha gelada</h1>
                     <p>Lata 350ml</p>
-                    <h2>R$ 4,90</h2>
+                    <div class="cost-icon">
+                        <h2>R$<span id = "drinkcost1">4.90</span></h2>
+                        <div class="tick icon3">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
@@ -89,9 +119,10 @@
             </div>
         </div>
         <div class="bottom-bar">
-            <button>Selecionar os 3 itens pra fechar o pedido</button>
+            <button class="button-checkout">Selecionar os 3 itens pra fechar o pedido</button>
         </div>
     </div>
-<script src="scripts.js"></script>
+<script src="scripts.js "></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

@@ -71,6 +71,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     color: #333333;
+    margin-bottom: 8px;
 }
 .food p , .drink p , .dessert p {
     font-family: 'Roboto', sans-serif;
@@ -83,7 +84,22 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
+
+}
+.cost-icon {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 8px;
+}
+.tick {
+    width: 15px;
+    height: 15px;
+    color: #32B72F;
+    display: none;
+}
+.show {
+    display: block;
 }
 .bottom-bar {
     width: 100%;
@@ -96,7 +112,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.bottom-bar button {
+.button-checkout {
     width: 364px;
     height: 61px;
     border-radius: 50px;
@@ -116,4 +132,7 @@ body {
 }
 .selectedfood img , .selecteddrink img , .selecteddessert img {
     padding: 13px 0 10px 0;
+}
+.button-checkout-on {
+    color: #32B72F;
 }
