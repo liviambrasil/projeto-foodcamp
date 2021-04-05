@@ -50,7 +50,7 @@ body {
     display: flex;
     overflow-x: scroll;
 }
-.option {
+.food , .drink , .dessert {
     width: 172px;
     height: 216px;
     background: #fff;
@@ -61,25 +61,25 @@ body {
     padding: 0 14px 0 14px;
     box-sizing: border-box;
 }
-.option img {
+.food img , .drink img , .dessert img {
     width: 144px;
     height: 87px;
     padding: 18px 0 10px 0;
 }
-.option h1 {
+.food h1 , .drink h1 , .dessert h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #333333;
 }
-.option p {
+.food p , .drink p , .dessert p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 15px;
     color: #A6A6A6;
     line-height: 19px;
 }
-.option h2 {
+.food h2 , .drink h2 , .dessert h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -110,10 +110,10 @@ body {
 
 /* breakpoint */
 
-.selected {
+.selectedfood , .selecteddrink , .selecteddessert {
     border: #32B72F solid 5px;
     padding: 0 9px 0 9px;
 }
-.selected img {
+.selectedfood img , .selecteddrink img , .selecteddessert img {
     padding: 13px 0 10px 0;
 }
