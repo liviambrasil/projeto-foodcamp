@@ -17,7 +17,6 @@ function selectfood(foodselected) {
     
 
     if (selectedfood !== null) {
-    console.log("vou remover o selecionado");
     selectedfood.classList.remove('selectedfood');
     icon.classList.remove('show');
     }
@@ -87,5 +86,11 @@ function checkout (){
     if(foodcost!==0 && drinkcost!==0 && dessertcost!==0){
         const buttonCheckout = document.querySelector(".button-checkout");
         buttonCheckout.classList.add('button-checkout-on');
+        document.getElementById("text").innerHTML="Fechar pedido";
+        buttonCheckout.disabled = false;
     }
+}
+
+function checkoutmessage (){
+    window.open("https://wa.me/5521994288121");
 }

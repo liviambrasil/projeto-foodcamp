@@ -144,3 +144,6 @@ body {
 .button-checkout-on {
     background: #32B72F;
 }
+.bottom-bar a {
+    display:none;
+}
