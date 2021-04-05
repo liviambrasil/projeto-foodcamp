@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
 }
 .top h1 {
         font-family: 'Righteous', cursive;
@@ -33,13 +34,13 @@ body {
     width: auto;
     margin: 123px 0 77px 19px;
 }
-.row {
+.foodrow , .drinkrow , .dessertrow {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 27px;    
 }     
-.row > h1 {
+.foodrow > h1 , .drinkrow > h1 , .dessertrow > h1 {
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 26px;
@@ -60,6 +61,7 @@ body {
     border-radius: 9px;
     padding: 0 14px 0 14px;
     box-sizing: border-box;
+    position: relative;
 }
 .food img , .drink img , .dessert img {
     width: 144px;
@@ -84,13 +86,18 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
-
+    box-sizing: border-box;
 }
 .cost-icon {
+    width: 144px;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8px;
+    position: absolute;
+    top: 184px;
+    bottom: 15px;
+    box-sizing: border-box;
+    padding-right: 5px;
 }
 .tick {
     width: 15px;
@@ -133,6 +140,7 @@ body {
 .selectedfood img , .selecteddrink img , .selecteddessert img {
     padding: 13px 0 10px 0;
 }
+
 .button-checkout-on {
-    color: #32B72F;
+    background: #32B72F;
 }

@@ -1,14 +1,15 @@
 let foodcost=0;
-let drinkcost=1;
-let dessertcost=2;
+let drinkcost=0;
+let dessertcost=0;
 var foodname;
 var drinkname;
 var dessertname;
 
 function selectfood(foodselected) {
 
+    const foodmenu = document.querySelector(".foodrow");
     const selectedfood = document.querySelector(".selectedfood");
-    const icon = document.querySelector(".show");
+    const icon = foodmenu.querySelector(".show");
     const selector = "." + "dish" + foodselected;
     const selectoricon = "." + "icon" + foodselected;
     const button = document.querySelector(selector);
@@ -32,9 +33,10 @@ function selectfood(foodselected) {
 
 function selectdrink(drinkselected) {
 
+    const drinkmenu = document.querySelector(".drinkrow");
     const selecteddrink = document.querySelector(".selecteddrink");
-    const icon = document.querySelector(".show");
-    const selector = "." + "dish" + drinkselected;
+    const icon = drinkmenu.querySelector(".show");
+    const selector = "." + "drink" + drinkselected;
     const selectoricon = "." + "icon" + drinkselected;
     const button = document.querySelector(selector);
     const buttonicon = document.querySelector(selectoricon);
@@ -50,6 +52,32 @@ function selectdrink(drinkselected) {
     drinkname = document.getElementById("drinkname"+drinkselected).innerText;
 
     button.classList.add('selecteddrink');
+    buttonicon.classList.add('show');
+
+    checkout ();
+}
+
+function selectdessert(dessertselected) {
+
+    const dessertmenu = document.querySelector(".dessertrow");
+    const selecteddessert = document.querySelector(".selecteddessert");
+    const icon = dessertmenu.querySelector(".show");
+    const selector = "." + "dessert" + dessertselected;
+    const selectoricon = "." + "icon" + dessertselected;
+    const button = document.querySelector(selector);
+    const buttonicon = document.querySelector(selectoricon);
+    
+
+    if (selecteddessert !== null) {
+    console.log("vou remover o selecionado");
+    selecteddessert.classList.remove('selecteddessert');
+    icon.classList.remove('show');
+    }
+
+    dessertcost = parseFloat(document.getElementById("dessertcost"+dessertselected).innerText);
+    dessertname = document.getElementById("dessertname"+dessertselected).innerText;
+
+    button.classList.add('selecteddessert');
     buttonicon.classList.add('show');
 
     checkout ();
