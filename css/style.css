@@ -66,7 +66,9 @@ body {
 .food img , .drink img , .dessert img {
     width: 144px;
     height: 87px;
-    padding: 18px 0 10px 0;
+    margin: 18px 0 10px 0;
+    object-fit: cover;
+    border-radius: 5px;
 }
 .food h1 , .drink h1 , .dessert h1 {
     font-family: 'Roboto', sans-serif;
@@ -138,7 +140,7 @@ body {
     padding: 0 9px 0 9px;
 }
 .selectedfood img , .selecteddrink img , .selecteddessert img {
-    padding: 13px 0 10px 0;
+    margin: 13px 0 10px 0;
 }
 
 .button-checkout-on {
