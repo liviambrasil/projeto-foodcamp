@@ -92,5 +92,8 @@ function checkout (){
 }
 
 function checkoutmessage (){
-    window.open("https://wa.me/5521994288121");
+    const cost = foodcost + drinkcost + dessertcost;
+    const message = encodeURIComponent("Olá, gostaria de fazer o pedido:" + "\n" + "- Prato: " + foodname + "\n" + "- Bebida: " + drinkname + "\n" + "- Sobremesa: " + dessertname + "\n" + "Total: R$ " + cost.toFixed(2));
+    const url = "https://wa.me/5521994288121?text=" + message;
+    window.open(url);
 }
